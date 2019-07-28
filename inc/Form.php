@@ -2,7 +2,7 @@
 
 namespace inc;
 
-use \inc\DB;
+use inc\DB;
 
 abstract class Form {
 	// Form construct

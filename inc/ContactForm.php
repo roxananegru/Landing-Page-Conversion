@@ -2,8 +2,8 @@
 
 namespace inc;
 
-use \inc\Form;
-use \inc\DB;
+use inc\Form;
+use inc\DB;
 
 class ContactForm extends Form {
 	protected $name;

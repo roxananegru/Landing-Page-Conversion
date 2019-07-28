@@ -2,7 +2,7 @@
 
 namespace inc;
 
-use \Inc\ContactForm;
+use inc\ContactForm;
 
 class Controller {
 	const LANDING_PAGE_VIEW = "views/landing.php";
