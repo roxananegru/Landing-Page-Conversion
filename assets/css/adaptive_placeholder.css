@@ -1,0 +1,98 @@
+form {
+  margin-top: 30px;
+}
+
+textarea {
+  margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(3em + 2px);
+  margin: 0 0 1em;
+  padding: 1em;
+  background: #fff;
+  resize: none;
+  outline: none;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea.form-control , select.form-control {
+  border: 1px solid #a49f9f;
+}
+
+select {
+  height: calc(3em + 2px)!important;
+  border: 1px solid #a49f9f!important;
+}
+
+textarea.form-control::placeholder, label {
+  color: #495057;
+  font-weight: 700;
+}
+
+input[type="text"][adaptive]:focus,
+input[type="email"][adaptive]:focus,
+textarea.form-control:focus,
+select.form-control:focus {
+  border-color: #a49f9f;
+  box-shadow: none;
+  outline: none;
+}
+input[type="text"][adaptive]:focus + label[placeholder]:before,
+textarea[adaptive]:focus + label[placeholder]:before,
+input[type="email"][adaptive]:focus + label[placeholder]:before {
+  color: #495057;
+  margin-top: 0;
+  position: relative;
+  top: -12px;
+  margin-left: 0;
+}
+input[type="text"][adaptive]:focus + label[placeholder]:before,
+textarea[adaptive]:focus + label[placeholder]:before,
+textarea[adaptive]:valid + label[placeholder]:before,
+input[type="email"][adaptive]:focus + label[placeholder]:before,
+input.active + label:before {
+  transition-duration: 0.2s;
+  -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
+          transform: translate(0, -1.5em) scale(0.9, 0.9);
+}
+input[type="text"][adaptive]:invalid + label[placeholder][alt]:before, 
+textarea[adaptive]:invalid + label[placeholder][alt]:before,
+input[type="email"][adaptive]:invalid + label[placeholder][alt]:before {
+  content: attr(alt);
+}
+input[type="text"][adaptive] + label[placeholder],
+textarea[adaptive] + label[placeholder],
+input[type="email"][adaptive] + label[placeholder]  {
+  display: block;
+  pointer-events: none;
+  line-height: 1.25em;
+  margin-top: calc(-3em - 5px);
+  margin-bottom: calc((3em - 1em) + 2px);
+}
+input[type="text"][adaptive] + label[placeholder]:before, 
+textarea + label[placeholder]:before,
+input[type="email"][adaptive] + label[placeholder]:before {
+  content: attr(placeholder);
+  display: inline-block;
+  margin: 0 calc(1em + 2px);
+  padding: 0 2px;
+  color: #32325d;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type="text"][adaptive] + label[placeholder]:before, 
+input[type="email"][adaptive] + label[placeholder]:before,
+input[type="number"][adaptive] + label[placeholder]:before,
+textarea[adaptive] + label[placeholder]:before {
+  color: #32325d;
+  line-height: 1.56;
+  font-size: 16px;
+  font-weight: bold;
+}
