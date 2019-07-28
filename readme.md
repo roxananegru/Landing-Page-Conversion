@@ -2,8 +2,10 @@
 Landing page Drupal pentru Conversion Marketing.
 
 ## Instalare
-### Se ruleaza fisierul sql conversion_landing.sql
-### Se editeaza fisierul config.php, unde:
+### SQL
+Se ruleaza fisierul sql conversion_landing.sql
+### Config
+Se editeaza fisierul config.php, unde:
 
 * name: Titlul paginii
 * base_url: Locatia unde este folosit proiectul, fara acest parametru setat corect proiectul nu va functiona
